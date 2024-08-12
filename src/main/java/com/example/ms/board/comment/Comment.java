@@ -1,9 +1,8 @@
 package com.example.ms.board.comment;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.example.ms.board.post.Post;
+import com.example.ms.user.User;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -18,7 +17,11 @@ public class Comment {
 
     private String content;
 
-    private String writer;
+    @ManyToOne
+    private User writer;
 
     private LocalDateTime createDate;
+
+    @ManyToOne
+    private Post post;
 }

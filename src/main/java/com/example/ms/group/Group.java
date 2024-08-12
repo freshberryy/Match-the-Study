@@ -1,12 +1,12 @@
 package com.example.ms.group;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.example.ms.group.category.Category;
+import com.example.ms.group.member.Member;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Data
@@ -18,11 +18,15 @@ public class Group {
 
     private String groupName;
 
-    private String category;
+    @OneToOne
+    private Category category;
 
     private String description;
 
     private Integer max;
 
     private LocalDateTime createDate;
+
+    @OneToMany(mappedBy = "group", cascade = CascadeType.REMOVE)
+    private List<Member> members;
 }
