@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\ksh62\Documents\GitHub\Match-the-Study\src\main\resources\static\style-chat.css">
+    <title>Document</title>
+</head>
+<body>
+  
+    <header class= "head">
+        <nav>
+        <a href = "main.html"><h1> 홈으로 </h1></a>
+    </nav>
+        <nav>
+            <a href = "search.html"><h3> 검색 </h3></a>
+        </nav>
+        <hr>
+        <nav>
+            <a href = "index.html"><h3> 로그인 </h3></a>
+        </nav>
+    </header>
+
+    <div class = "board1">
+        <table class = "free">
+            <tr><td colspan="4"><h2>&#127758자유게시판</h2><hr></td></tr>
+            <tr class ="face">
+                <td class="num">번호</td>
+                <td class="title">제목</td>
+                <td class="name">작성자</td>
+                <td><a href ="mypage.html">더 보기</href></td>
+            </tr>
+        </table>
+        <table class = "dept">
+            <tr><td colspan="4"><h2>🏫학교게시판</h2><hr></td></tr>
+            <tr class ="face">
+                <td class="num">번호</td>
+                <td class="title">제목</td>
+                <td class="name">작성자</td>
+                <td><a href ="mypage.html">더 보기</href></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class = "board2">
+        <table class = "cofi">
+            <tr><td colspan="4"><h2>✏자격증게시판</h2><hr></td></tr>
+            <tr class ="face">
+                <td class="num">번호</td>
+                <td class="title">제목</td>
+                <td class="name">작성자</td>
+                
+                <td class = "more"><a href ="mypage.html">더 보기</href></td>
+                </div>
+            </tr>
+        </table>
+        <table class = "hiri">
+            <tr><td colspan="4"><h2>🏢취업&정보 게시판</h2><hr></td></tr>
+            <tr class ="face">
+                <td class="num">번호</td>
+                <td class="title">제목</td>
+                <td class="name">작성자</td>
+                <td><a href ="mypage.html">더 보기</href></td>
+            </tr>
+        </table>
+    </div>
+
+<div class="button">
+    <button type="button" onclick="toggleChat()">채팅방 열기</button>
+</div>
+
+<div class="chatwrap">
+    <div class="header">
+        채팅
+    </div>
+    <div class="chat">
+        <ul></ul>
+        <div class="input-div">
+            <textarea placeholder="메시지를 입력하세요."></textarea>
+        </div>
+        <div class="chat format">
+            <ul>
+                <li>
+                    <div class="sender">
+                        <span></span>
+                    </div>
+                    <div class="message">
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleChat() {
+        var chatWrap = document.querySelector('.chatwrap');
+        var container = document.querySelector('.container'); // 게시판을 감싸는 클래스가 필요합니다.
+
+        if (chatWrap.style.right === '0px') {
+            // 채팅방을 숨길 때
+            chatWrap.style.right = '-400px'; // 채팅방을 화면 오른쪽 밖으로 이동
+            container.style.marginLeft = '0'; // 게시판을 원위치로
+        } else {
+            // 채팅방을 보일 때
+            chatWrap.style.right = '0'; // 채팅방을 화면 안으로 이동
+            container.style.marginLeft = '-400px'; // 게시판을 왼쪽으로 이동
+        }
+    }
+</script>
+</body>
+</html>

@@ -3,50 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
-    <link rel="stylesheet" href="../../../../../../../Users/lenovo/Downloads/style.css">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            background-color: #98FB98; /* 연두색 배경 */
-            margin: 0;
-        }
-        .mypage-container {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px; /* 더 넓게 설정 */
-        }
-        .mypage-container h2 {
-            margin-bottom: 20px;
-        }
-        .mypage-container ul {
-            list-style: none;
-            padding: 0;
-        }
-        .mypage-container li {
-            margin: 10px 0;
-        }
-        .mypage-container li a {
-            text-decoration: none;
-            color: #007bff;
-        }
-    </style>
+    <link rel ="stylesheet" href ="C:\Users\ksh62\Documents\GitHub\Match-the-Study\src\main\resources\static\style-mypage.css">
+    <title>마이페이지</title>
 </head>
 <body>
-    <div class="mypage-container">
-        <h2>내 정보</h2>
-        <ul>
-            <li><a href="#">계정 관리</a></li>
-            <li><a href="#">파티 정보</a></li>
-        </ul>
+
+    <header class= "head">
+        <nav>
+        <a href = "main.html"><h1> 홈으로 </h1></a>
+    </nav>
+        <nav>
+            <a href = "search.html"><h3> 검색 </h3></a>
+        </nav>
+        <hr>
+        <nav>
+            <a href = "search.html"><h3> 로그인 </h3></a>
+        </nav>
+    </header>
+
+    <div class="edit">
+        <ins>마이페이지</ins>
     </div>
+
+    
+
+    <div class = "MyPage">
+    <form action = "#" method = "get">
+            <table id = "MyPage">
+            <thead>
+                <tr>
+                    <th class = "title"><ins>내 정보</ins></th>
+                </tr>
+            </thead>
+            <tbody id = "main"> 
+            <tr>
+                    <th class ="name"> 성명 <input type = "text"> </th>
+                </tr>
+                <tr>
+                    <th> 이메일 <input type = "email">
+                </tr>
+                <tr>
+                    <th> 비밀번호 <input type = "password"></th>
+                </tr>
+            </tbody> 
+            </table>
+                <button type = "submit" >  수정 </button>
+
+        </div>
+
+    </form>
+    
 </body>
 </html>
-
-
