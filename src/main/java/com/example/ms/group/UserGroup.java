@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
-@ㅇㅁ@Data
+@Data
 public class UserGroup {
 
     @Id
