@@ -1,6 +1,6 @@
 package com.example.ms.group.member;
 
-import com.example.ms.group.Group;
+import com.example.ms.group.UserGroup;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -15,7 +15,7 @@ public class Member {
     private Integer id;
 
     @ManyToOne
-    private Group group;
+    private UserGroup group;
 
     private LocalDateTime inDate;
 }
