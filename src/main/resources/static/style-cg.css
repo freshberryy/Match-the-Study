@@ -78,7 +78,8 @@ input[type="button"]:hover {
 
 /* 학과 선택 드롭다운 스타일 */
 .select, .qualifications {
-    margin-top: 20px;
+    margin-top: 15px;
+    display:inline-block;
 }
 
 select {

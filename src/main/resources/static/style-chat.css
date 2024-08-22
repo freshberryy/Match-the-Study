@@ -70,7 +70,7 @@
 .chatwrap .header {
     font-size: 14px;
     padding: 15px 0;
-    background: #F18C7E;
+    background: #54fb75;
     color: white;
     text-align: center;
 }
@@ -177,10 +177,32 @@
     display: none;
 }
 
-button {
-    width: 10%;
-    padding: 12px;
-    background-color: #cefbc9;
+.search {
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:5%;
+}
+
+input[type="search"] {
+    width: calc(100% - 110px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="button"] {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button{
+    padding: 10px;
+    background-color: #37e024;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -190,7 +212,18 @@ button {
     font-weight:bold;
     cursor: pointer;
     color: #f6dc77;
+}
 
+.select, .qualifications {
+    margin-top: 20px;
+    margin-left:10%;
+    margin-right:30%;
+}
 
-
+select {
+    width: 100%;
+    margin-right:10%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
