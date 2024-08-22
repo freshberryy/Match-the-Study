@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글 작성</title>
+    <link rel="stylesheet" href="C:\Users\ksh62\OneDrive\문서\GitHub\Match-the-Study\src\main\resources\static\textarea.css">
+
+    <!-- Summernote CSS and JS -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+</head>
+<body>
+
+    <div class="write">
+        <h1>글 작성</h1>
+        <h3>제목</h3>
+        <input type="text" placeholder="제목을 입력하세요">
+
+        <h3>내용</h3>
+        <div id="summernote"></div>
+
+        <button type="submit">작성 완료</button>
+    </div>
+
+    <script>
+        $('#summernote').summernote({
+            placeholder: '내용을 입력하세요',
+            tabsize: 2,
+            height: 200,
+            toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'underline', 'clear']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'video']],
+                ['view', ['fullscreen', 'codeview', 'help']]
+            ]
+        });
+    </script>
+
+</body>
+</html>

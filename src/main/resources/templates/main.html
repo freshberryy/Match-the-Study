@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\ksh62\OneDrive\문서\GitHub\Match-the-Study\src\main\resources\static\style-chat.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class= "head">
+        <div class = "head">
+        <nav>
+        <a href = "main.html"><h1> 홈으로 </h1></a>
+    </nav>
+        <nav>
+            <a href = "index.html"><h3> 로그인 </h3></a>
+        </nav>
+    </header>
+
+    <div class="search">
+            <input type="search" placeholder="검색하세요">
+            <input type="button" value="검색">
+    </div>
+</div>
+
+    <div class="select">
+        <select name="학과" id="select-department" onchange="showQualifications()">
+            <option value="" selected disabled>학과를 선택하세요</option>
+            <optgroup label="사범대학">
+                <option value="사범대">사범대</option>
+            </optgroup>
+            <optgroup label="공과대학">
+                <option value="computer">IT관련 학과</option>
+                <option value="electric">전기/전자관련 학과</option>
+                <option value="mechanical">기계관련 학과</option>
+                <option value="Architectural">건축관련 학과</option>
+                <option value="etc">기타 학과</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <div class="qualifications" id="qualifications" style="display: none;">
+        <select name="자격증" id="select-qualifications">
+            <option value="" selected disabled>자격증을 선택하세요</option>
+            <optgroup label="임용고시">
+                <option value="임용고시">임용고시</option>
+            </optgroup>
+            <optgroup label="기사 자격증">
+                <option value="정보처리기사">정보처리기사</option>
+                <option value="전기기사">전기기사</option>
+                <option value="일반기계기사">일반기계기사</option>
+                <option value="건축기사">건축기사</option>
+            </optgroup>
+            <optgroup label="어학">
+                <option value="토익">토익</option>
+                <option value="토플">토플</option>
+                <option value="hsk">hsk</option>
+                <option value="jlpt">jlpt</option>
+            </optgroup>
+        </select>
+    </div>
+</form>
+</div>
+
+
+
+    <div class = "board1">
+        <table class = "free">
+            <tr><td colspan="4"><h2>&#127758자유게시판</h2><hr></td></tr>
+            <tr class ="face">
+                <td class="num">번호</td>
+                <td class="title">제목</td>
+                <td class="name">작성자</td>
+                <td><a href ="freeboard.html">더 보기</href></td>
+            </tr>
+        </table>
+        <table class = "dept">
+            <tr><td colspan="4"><h2>🏫학교게시판</h2><hr></td></tr>
+            <tr class ="face">
+                <td class="num">번호</td>
+                <td class="title">제목</td>
+                <td class="name">작성자</td>
+                <td><a href ="deptboard.html">더 보기</href></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class = "board2">
+        <table class = "cofi">
+            <tr><td colspan="4"><h2>✏자격증게시판</h2><hr></td></tr>
+            <tr class ="face">
+                <td class="num">번호</td>
+                <td class="title">제목</td>
+                <td class="name">작성자</td>
+                
+                <td class = "more"><a href ="cofiboard.html">더 보기</href></td>
+                </div>
+            </tr>
+        </table>
+        <table class = "hiri">
+            <tr><td colspan="4"><h2>🏢취업&정보 게시판</h2><hr></td></tr>
+            <tr class ="face">
+                <td class="num">번호</td>
+                <td class="title">제목</td>
+                <td class="name">작성자</td>
+                <td><a href ="hiriboard.html">더 보기</href></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src = "C:\Users\ksh62\OneDrive\문서\GitHub\Match-the-Study\src\main\resources\static\select.js">
+    </script>
+    
+
+</body>
+</html>
