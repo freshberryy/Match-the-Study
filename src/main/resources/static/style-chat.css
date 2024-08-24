@@ -1,11 +1,27 @@
+header{
+    background-color: #54fb75;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
-.head {
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
-    padding:10px;
-    background-color: #f8f8f8;
- }
+header .head nav{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header .head h1, header .head h3{
+    margin: 0;
+    color: #333;
+    font-weight: normal;
+    display: inline;
+}
+
+header hr{
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    margin: 10px 0;
+}
+
 
     .board1{
         display : flex;
@@ -40,20 +56,6 @@
         margin-top:3%;
         margin-left:10%;
     }
-
- .head nav{
-     margin: 0 10px;
- }
- 
- .head h1{
-     font-size:24px;
-     margin:0;
-     display: inline;
- }
- 
- .head h3{
-     margin:auto;
- }
 
 
  .chatwrap {
@@ -200,19 +202,6 @@ input[type="button"] {
     cursor: pointer;
 }
 
-button{
-    padding: 10px;
-    background-color: #37e024;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #333;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-weight:bold;
-    cursor: pointer;
-    color: #f6dc77;
-}
 
 .select, .qualifications {
     margin-top: 20px;
